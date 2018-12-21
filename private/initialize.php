@@ -28,6 +28,5 @@ require_once("models/type.class.php");
   Admin::set_database($db);
   Address::set_database($db);
   Type::set_database($db);
-  SuperAdmin::set_database($db);
 
  ?>
