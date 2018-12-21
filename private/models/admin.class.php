@@ -30,8 +30,8 @@ class Admin {
     $sql .="'" . $this->email ."',";
     $sql .="'" . $this->username ."',";
     $sql .="'" . $this->hashed_password ."',";
-    $sql .="'" . $this->created_at ."',";
-    $sql .="'" . $this->updated_at ."',";
+    $sql .=" CURRENT_TIMESTAMP ,";
+    $sql .=" CURRENT_TIMESTAMP,";
     $sql .="'" . $this->is_super ."'";
     $sql .=");";
 
@@ -119,9 +119,9 @@ class Admin {
     $this->name = $args['name'] ?? '';
     $this->email = $args['email'] ?? '';
     $this->username = $args['username'] ?? '';
-    $this->hashed_password = $args['username'] ?? '';
-    $this->created_at = $args['created_at'] ?? '';
-    $this->updated_at = $args['updated_at'] ?? '';
+    $this->hashed_password = $args['hashed_password'] ?? '';
+    //$this->created_at = $args['created_at'] ?? '';
+    //$this->updated_at = $args['updated_at'] ?? '';
     $this->is_super = $args['is_super'] ?? '';
     //var_dump($this);
   }
