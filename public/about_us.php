@@ -16,7 +16,7 @@
 </div>
 
 <div class="w3-third">
-  <img src="img/real2.jpg" alt="Designer" style="width:45%" class="w3-circle w3-hover-opacity">
+  <img src="img/fatma.jpg" alt="Designer" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3> Fatema Deif</h3>
   <p>Web Designer</p>
 </div>
