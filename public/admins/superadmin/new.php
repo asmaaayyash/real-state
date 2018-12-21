@@ -4,6 +4,7 @@
 
 
 <?php
+
   $args['name'] = "Mohammed Saudi";
   $args['email'] = "msaudi.cse@gmail.com";
   $args['username'] = "msaudi";
@@ -13,12 +14,9 @@
 
   $admin = new Admin($args);
   $result = $admin->create();
-  if (!$result) {
-    echo "inserted";
-  }else {
-    echo "error";
-  }
-  //var_dump($args);
+
+  echo $result;
+  //var_dump($args);*/
 ?>
 
 
