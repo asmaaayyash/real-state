@@ -2,15 +2,16 @@
 <?php require_once(PRIVATE_PATH . '/includes/admin_header.php'); ?>
 <?php require_once(PRIVATE_PATH . '/includes/super_admin_header.php'); ?>
 <<?php
-$args['id'] = "5";
-$admin = new Admin($args);
+$args['id'] = $_GET['id'];
 
+$admin = new Admin($args);
 $result = $admin->delete();
 
 if (!$result) {
-  echo "error inserting your recod ";
+  echo "error Deleting your recod ";
 }else {
-  echo "Your record inserted successfully";
+  echo "Your record is Deleted successfully";
+    header("Location: index.php" );
 }
 
 
