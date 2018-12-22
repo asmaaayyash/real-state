@@ -2,25 +2,33 @@
 <?php require_once(PRIVATE_PATH . '/includes/admin_header.php'); ?>
 <?php require_once(PRIVATE_PATH . '/includes/super_admin_header.php'); ?>
 
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Insert New Admin</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Provide all information below</p>
 
 <?php
 
-  $args['name'] = "Mohammed Saudi";
-  $args['email'] = "msaudi.cse@gmail.com";
-  $args['username'] = "msaudi";
-  $password = 'IUR123456';
+  $args['name'] = "Asmaa Gamal";
+  $args['email'] = "aoikawa@gmail.com";
+  $args['username'] = "Aoikawa ";
+  $password = '147258';
   $args['hashed_password'] = password_hash($password, PASSWORD_BCRYPT);
   $args['is_super'] = 0;
 
   $admin = new Admin($args);
   $result = $admin->create();
 
-  echo $result;
+  if (!$result) {
+    echo "error inserting your recod ";
+  }else {
+    echo "Your record inserted successfully";
+  }
   //var_dump($args);*/
 ?>
 
 
-
+</div>
 
 
 

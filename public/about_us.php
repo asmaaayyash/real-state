@@ -24,7 +24,7 @@
 <div class="w3-third">
   <img src="img/radwa.jpg" alt="Architect" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Radwa Gamil </h3>
-  <p>Architect &assisstant </p>
+  <p>Architect & Assistant </p>
 </div>
 
 
