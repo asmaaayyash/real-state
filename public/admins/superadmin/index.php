@@ -19,6 +19,7 @@
           <th class="w3-xlarge" bgcolor ="#F8F8F8">Name</th><br>
           <th class="w3-xlarge" bgcolor ="#F8F8F8">Username</th>
           <th class="w3-xlarge" bgcolor ="#F8F8F8">Email</th>
+        <!--  <th class="w3-xlarge" bgcolor ="#F8F8F8">Created At</th> -->
           <th class="w3-xlarge" bgcolor ="#F8F8F8">Operations</th>
 
       <?php
@@ -29,6 +30,7 @@
         echo "<td><h4><font color ='#F8F8F8'>".$admin->getName() . "</font></h4></td>";
         echo "<td><h4><font color ='#F8F8F8'>".$admin->getUsername() . "</font></h4></td>";
         echo "<td><h4><font color ='#F8F8F8'>".$admin->getEmail() . "</font></h4></td>";
+        //echo "<td><h4><font color ='#F8F8F8'>".$admin->getCreatedAt() . "</font></h4></td>";
         echo "<td> <h4>"
         ."<a href='view.php?id={$admin->getId()}' >". "<font color ='#F8F8F8'> View </font>" ."</a>"
         ."<a href='edit.php?id={$admin->getId()}'>". " <font color ='#F8F8F8'>- Edit </font>" ."</a>"
