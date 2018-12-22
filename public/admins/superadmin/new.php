@@ -9,10 +9,10 @@
 
 <?php
 
-  $args['name'] = "Asmaa Gamal";
-  $args['email'] = "aoikawa@gmail.com";
-  $args['username'] = "Aoikawa ";
-  $password = '147258';
+  $args['name'] = "Radwa Gamil";
+  $args['email'] = "radwa@gmail.com";
+  $args['username'] = "radwaga ";
+  $password = '123456';
   $args['hashed_password'] = password_hash($password, PASSWORD_BCRYPT);
   $args['is_super'] = 0;
 

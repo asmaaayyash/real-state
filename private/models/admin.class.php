@@ -52,8 +52,7 @@ class Admin {
     $sql .=" email = '" . $this->email ."',";
     $sql .=" username = '" . $this->username ."',";
     $sql .=" hashed_password = '" . $this->hashed_password ."',";
-    $sql .=" created_at = '" . $this->created_at ."',";
-    $sql .=" updated_at = '" . $this->updated_at ."',";
+    $sql .=" updated_at =  CURRENT_TIMESTAMP ,";
     $sql .=" is_super = '" . $this->is_super ."'";
     $sql .=" WHERE ";
     $sql .="id = ".$this->id ." ;";
