@@ -25,16 +25,16 @@
       $admins = Admin::find_all();
       foreach ($admins as $admin) {
         echo "<tr>";
-        echo "<td><h4><font color ='#F8F8F8'>".$admin->getId() . "</font></h4></td>";
-        echo "<td><h4><font color ='#F8F8F8'>".$admin->getName() . "</font></h4></td>";
-        echo "<td><h4><font color ='#F8F8F8'>".$admin->getUsername() . "</font></h4></td>";
-        echo "<td><h4><font color ='#F8F8F8'>".$admin->getEmail() . "</font></h4></td>";
-        echo "<td> <h4>"
+        echo "<td><h6><font color ='#F8F8F8'>".$admin->getId() . "</font></h6></td>";
+        echo "<td><h6><font color ='#F8F8F8'>".$admin->getName() . "</font></h6></td>";
+        echo "<td><h6><font color ='#F8F8F8'>".$admin->getUsername() . "</font></h6></td>";
+        echo "<td><h6><font color ='#F8F8F8'>".$admin->getEmail() . "</font></h6></td>";
+        echo "<td> <h6>"
         ."<a href='view.php?id={$admin->getId()}' >". "<font color ='#F8F8F8'> View </font>" ."</a>"
         ."<a href='edit.php?id={$admin->getId()}'>". " <font color ='#F8F8F8'>- Edit </font>" ."</a>"
         ."<a href='delete.php?id={$admin->getId()}' "
         ."onclick='return confirm(\"Are you sure?\")' >". "<font color ='#F8F8F8'> -  Delete </font>" ."</a>"
-        ."</font></h4></td>";
+        ."</font></h6></td>";
 
         //print_r($cat);
       }
