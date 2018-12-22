@@ -22,14 +22,15 @@ class Admin {
 
   public function create()
   {
+
     //print_r($this);
     $sql  ="INSERT INTO admin(" ;
     $sql .=" name, email, username, hashed_password, created_at, updated_at, is_super";
     $sql .=" ) VALUES ( ";
-    $sql .="'" . $this->name ."',";
-    $sql .="'" . $this->email ."',";
-    $sql .="'" . $this->username ."',";
-    $sql .="'" . $this->hashed_password ."',";
+    $sql .="'" . self::$database->escape_string($this->name) ."',";
+    $sql .="'" . self::$database->escape_string($this->email) ."',";
+    $sql .="'" . self::$database->escape_string($this->username) ."',";
+    $sql .="'" . self::$database->escape_string($this->hashed_password) ."',";
     $sql .=" CURRENT_TIMESTAMP ,";
     $sql .=" CURRENT_TIMESTAMP,";
     $sql .="'" . $this->is_super ."'";

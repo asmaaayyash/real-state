@@ -9,9 +9,9 @@
 
 <?php
 
-  $args['name'] = "Radwa Gamil";
-  $args['email'] = "radwa@gmail.com";
-  $args['username'] = "radwaga ";
+  $args['name'] = "fatma'' deif";
+  $args['email'] = "fatma@gmail.com";
+  $args['username'] = "fatmade ";
   $password = '123456';
   $args['hashed_password'] = password_hash($password, PASSWORD_BCRYPT);
   $args['is_super'] = 0;
@@ -24,7 +24,7 @@
   }else {
     echo "Your record inserted successfully";
   }
-  //var_dump($args);*/
+  var_dump($args);
 ?>
 
 
