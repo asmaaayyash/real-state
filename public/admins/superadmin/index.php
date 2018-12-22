@@ -9,6 +9,7 @@
     <hr style="width:200px" class="w3-opacity">
     <p>List of All sub Admins & you can customize them.</p>
 
+    <h4 class="w3-text-light-grey"><a href="new.php">Insert New Admin </a></h4>
 
 
 
