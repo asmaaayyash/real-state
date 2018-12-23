@@ -23,16 +23,20 @@ if (is_post_request()) {
   $args['hashed_password'] = password_hash($password, PASSWORD_BCRYPT);
   $args['is_super'] = 0;
 
-  $admin = new Admin($args);
-  $result = $admin->create();
-
-  if (!$result) {
-    echo "error inserting your recod ";
-    die("");
-  }else {
-    echo "<font color ='#F8F8F8'> Your record inserted successfully </font>";
-    die("");
+  if (is_unique($username)) {
+    $admin = new Admin($args);
+    $result = $admin->create();
+    if (!$result) {
+      echo "error inserting your recod ";
+      die("");
+    }else {
+      echo "<font color ='#F8F8F8'> Your record inserted successfully </font>";
+      die("");
+    }
   }
+
+
+
 }
 
 

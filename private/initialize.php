@@ -10,7 +10,7 @@ define("INCLUDES_PATH", PRIVATE_PATH . '/includes');
 //echo INCLUDES_PATH;
 
 
-
+require_once("validation_functions.php");
 require_once("functions.php");
 require_once("database_functions.php");
 require_once("models/admin.class.php");
