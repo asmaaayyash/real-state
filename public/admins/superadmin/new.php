@@ -23,8 +23,9 @@ if (is_post_request()) {
   $args['hashed_password'] = password_hash($password, PASSWORD_BCRYPT);
   $args['is_super'] = 0;
 
-  if (is_unique($username)) {
-    $admin = new Admin($args);
+  $admin = new Admin($args);
+  //echo $admin->getUsername();
+  if ($admin->is_unique($admin->getUsername())) {
     $result = $admin->create();
     if (!$result) {
       echo "error inserting your recod ";
@@ -33,6 +34,8 @@ if (is_post_request()) {
       echo "<font color ='#F8F8F8'> Your record inserted successfully </font>";
       die("");
     }
+  }else{
+    echo "<h4><font color ='#FF5733'>Username is already taken, try another one</font></h4>";
   }
 
 

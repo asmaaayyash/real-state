@@ -125,14 +125,16 @@ class Admin {
     $this->is_super = $args['is_super'] ?? '';
     //var_dump($this);
   }
-  function is_unique($username) {
-    $sql = "SELECT * FROM admin ";
-    $sql .= "WHERE username='" . self::$database->escape_string($username) . "'";
-    $result = self::$database->query($sql);
-    if ($result->num_rows >1){
-      echo "username is already taken";
+
+  static public function is_unique($username) {
+      $sql = "SELECT * FROM admin ";
+      $sql .= "WHERE username='" . self::$database->escape_string($username) . "'";
+      $result = self::$database->query($sql);
+      if ($result->num_rows >1){
+        echo "username is already taken";
+      }
+
     }
-  }
 
   static public function find_by_username($username) {
       $sql = "SELECT * FROM admin ";
