@@ -1,12 +1,12 @@
 <?php
 
-  public function validate_username($username) {
+   function validate_username($username) {
     if (!preg_match('/^[a-zA-Z0-9]{5,}$/', $username)) {
       echo "Username must be 5 characters at least - english chars & numbers only allowed ";
   }
 }
 
-  public function validate_name($name) {
+   function validate_name($name) {
     if(strlen($name) < 8){
       echo " Name must be 8 or more charactes";
     }
@@ -16,7 +16,7 @@
 
   }
 
-  public function validate_email($email) {
+   function validate_email($email) {
     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
       return FALSE;
     }
