@@ -21,11 +21,11 @@
 
     <nav class="w3-sidebar w3-bar-block">
 
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <a href=<?php echo WWW_ROOT . "/admins/index.php"?> class="w3-bar-item w3-button w3-padding-large w3-black">
         <i class="fa fa-home w3-xxlarge"></i>
         <p >HOME</p>
       </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <a href="<?php echo WWW_ROOT . "/admins/proparity/index.php"?>" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
         <i class="glyphicon glyphicon-cloud" style='font-size:48px'></i>
         <p>Property</p>
       </a>

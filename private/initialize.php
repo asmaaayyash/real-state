@@ -9,6 +9,14 @@ define("INCLUDES_PATH", PRIVATE_PATH . '/includes');
 //echo PUBLIC_PATH . "</br>";
 //echo INCLUDES_PATH;
 
+$public_end = strpos($_SERVER['SCRIPT_NAME'], '/public') + 7;
+$doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
+define("WWW_ROOT", $doc_root);$public_end = strpos($_SERVER['SCRIPT_NAME'], '/public') + 7;
+$doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
+if (!defined('WWW_ROOT')) define('WWW_ROOT', $doc_root);
+//define("WWW_ROOT", $doc_root);
+
+//echo WWW_ROOT;
 
 require_once("validation_functions.php");
 require_once("functions.php");
